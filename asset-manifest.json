@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fake_store/static/css/main.b29742ae.css",
+    "main.js": "/fake_store/static/js/main.fd774c0d.js",
+    "static/media/woman_hero2.png": "/fake_store/static/media/woman_hero2.4f7858ffd9e2aa471fac.png",
+    "static/media/logo.svg": "/fake_store/static/media/logo.602f42bc5247b6c8fc88dcf001c1a477.svg",
+    "index.html": "/fake_store/index.html",
+    "main.b29742ae.css.map": "/fake_store/static/css/main.b29742ae.css.map",
+    "main.fd774c0d.js.map": "/fake_store/static/js/main.fd774c0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29742ae.css",
+    "static/js/main.fd774c0d.js"
+  ]
+}
