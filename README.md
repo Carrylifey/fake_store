@@ -1,4 +1,4 @@
-# FakeStore
+#FakeStore
 
 Ecommerce Shop is a React-based web application for online shopping.
 
@@ -29,11 +29,13 @@ npm install -D tailwindcss
 git clone https://github.com/Carrylifey/fake_store.git
 
 # Navigate to the Project Directory:
-   cd fake_store
+cd fake_store
 
 # Install Dependencies
 npm install
+
 or
+
 yarn Install
 
 # Build Tailwind CSS
