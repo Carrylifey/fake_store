@@ -14,7 +14,7 @@ import Checkout from "./pages/Checkout";
 const App = () => {
   return (
     <div className="overflow-hidden">
-      <Router>
+      <Router basename="/fake_store">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
