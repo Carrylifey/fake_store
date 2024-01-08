@@ -1,10 +1,12 @@
-import React from "react";
+import React,{ useContext } from "react";
 import Img from "../img/woman_hero2.png";
 import { Link } from "react-router-dom";
+import { SidebarContext } from "../contexts/SidebarContext";
 
 const Hero = () => {
+  const { handleClose } = useContext(SidebarContext);
   return (
-    <section className="bg-yellow-100  h-[800px] bg-no-repeat bg-cover bg-center py-24">
+    <section onClick={()=> handleClose} className="bg-yellow-100  h-[800px] bg-no-repeat bg-cover bg-center py-24">
       <div className="container mx-auto flex justify-around h-full">
         <div className="flex flex-col justify-center">
           <div className="font-semibold flex items-center uppercase">
