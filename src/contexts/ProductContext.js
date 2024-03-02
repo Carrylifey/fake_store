@@ -7,6 +7,7 @@ const ProductProvider = ({ children }) => {
   //product State
   const [products, setProducts] = useState([]);
   const [isLoading, setIsloading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
   //fetch products
   useEffect(() => {
     const fetchData = async () => {
@@ -27,8 +28,10 @@ const ProductProvider = ({ children }) => {
 
     fetchData();
   }, []);
+
+  
   return (
-    <ProductContext.Provider value={{ products, isLoading }}>
+    <ProductContext.Provider value={{ products, isLoading, setSearchTerm,searchTerm}}>
       {children}
     </ProductContext.Provider>
   );
