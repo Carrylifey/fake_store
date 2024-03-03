@@ -6,7 +6,9 @@ export const ProductContext = createContext();
 const ProductProvider = ({ children }) => {
   //product State
   const [products, setProducts] = useState([]);
+  //loading State
   const [isLoading, setIsloading] = useState(false);
+  //search state
   const [searchTerm, setSearchTerm] = useState("");
   //fetch products
   useEffect(() => {

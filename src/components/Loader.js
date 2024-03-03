@@ -2,16 +2,10 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div className="min-h-[15rem] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-      <div className="flex flex-auto flex-col justify-center items-center p-4 md:p-5">
-        <div className="flex justify-center">
-          <div
-            className="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
-            role="status"
-            aria-label="loading"
-          >
-            <span className="sr-only">Loading...</span>
-          </div>
+    <div class="bg-gray-200 w-full min-h-screen flex justify-center items-center">
+      <div class="flex min-h-screen w-full items-center justify-center bg-gray-200">
+        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 animate-spin">
+          <div class="h-9 w-9 rounded-full bg-gray-200"></div>
         </div>
       </div>
     </div>

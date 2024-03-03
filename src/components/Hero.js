@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import Img from "../img/woman_hero2.png";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { SidebarContext } from "../contexts/SidebarContext";
 
 const Hero = () => {
   const { handleClose } = useContext(SidebarContext);
+
   return (
     <section
       onClick={handleClose}
@@ -19,12 +20,17 @@ const Hero = () => {
             AUTUMN STORE <br />
             <span className="font-semibold">WINTER EDITION</span>
           </h1>
-          <Link
-            to={"/"}
-            className="self-start uppercase font-semibold border-b-2 border-primary"
+          <ScrollLink
+            to="products" 
+            spy={true}
+            smooth={true}
+            offset={-100} 
+            duration={1000}
+            isDynamic={true}
+            className="self-start uppercase font-semibold border-b-2 border-primary cursor-pointer"
           >
             Discover More
-          </Link>
+          </ScrollLink>
         </div>
         <div className="hidden lg:block overflow-y-clip">
           <img src={Img} alt="" />

@@ -103,6 +103,7 @@ const Checkout = () => {
                     onChange={handleInputChange}
                     placeholder="John Doe"
                     className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    required
                   />
                 </div>
                 {/* Address */}
@@ -121,6 +122,7 @@ const Checkout = () => {
                     onChange={handleInputChange}
                     placeholder="123 Main St, City, Country"
                     className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    required
                   />
                 </div>
                 {/* Email */}
@@ -139,6 +141,7 @@ const Checkout = () => {
                     onChange={handleInputChange}
                     placeholder="john.capler@fang.com"
                     className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    required
                   />
                 </div>
                 {/* Card Number */}
@@ -150,13 +153,15 @@ const Checkout = () => {
                     Card number
                   </label>
                   <input
-                    type="text"
+                    type="number" 
+                    inputMode="numeric" 
                     id="cardNumber"
                     name="cardNumber"
                     value={formData.cardNumber}
                     onChange={handleInputChange}
                     placeholder="1234-5678-XXXX-XXXX"
                     className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    input
                   />
                   <img
                     src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
@@ -220,6 +225,7 @@ const Checkout = () => {
                         onChange={handleInputChange}
                         placeholder="Security code"
                         className="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                        required
                       />
                     </div>
                   </div>
@@ -240,6 +246,7 @@ const Checkout = () => {
                     onChange={handleInputChange}
                     placeholder="Name on the card"
                     className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    required
                   />
                 </div>
                 {/* Place Order Button */}
